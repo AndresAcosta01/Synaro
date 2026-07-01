@@ -1,19 +1,19 @@
-import Footer from "../components/layout/Footer"
-import Header from "../components/layout/Header"
-import Main from "../components/layout/Main"
-import Sidebar from "../components/layout/Sidebar"
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
+import Main from "../components/layout/Main";
+import Sidebar from "../components/layout/Sidebar";
 
 const AppLayout = () => {
     return (
-        <div className="h-screen">
+        <div className="flex flex-col h-screen">
             <Header />
-            <div className="flex">
+
+            <div className="flex flex-1 overflow-hidden">
                 <Sidebar />
                 <Main />
             </div>
-            <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default AppLayout
+export default AppLayout;

@@ -1,15 +1,25 @@
-import Brand from "./Brand"
-import HeaderActions from "./HeaderActions"
-import SearchBar from "./SearchBar"
+import Brand from "./Brand";
+import HeaderActions from "./HeaderActions";
+import HeaderTitle from "./HeaderTittle";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
     return (
-        <header className="flex h-[80px] gap-4 items-center bg-paper border-line">
-            <Brand />
-            <SearchBar />
-            <HeaderActions />
-        </header>
-    )
-}
+        <header className="flex h-[80px] border-b border-line bg-paper">
+            <div className="flex items-center w-[330px] px-[24px] border-r border-line">
+                <Brand />
+            </div>
+            <div className="flex flex-1 items-center px-[32px]">
+                <HeaderTitle title="Inicio" />
 
-export default Header
+                <div className="ml-auto flex items-center gap-[16px]">
+                    <SearchBar />
+                    <HeaderActions />
+                </div>
+            </div>
+
+        </header>
+    );
+};
+
+export default Header;

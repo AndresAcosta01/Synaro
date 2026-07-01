@@ -9,7 +9,7 @@ const HeaderActions = () => {
             <button>
                 <Moon />
             </button>
-            <button className="flex">
+            <button className="flex bg-pine rounded-[8px] px-[10px] py-[10px] text-white">
                 <Plus />
                 Nuevo registro
             </button>
