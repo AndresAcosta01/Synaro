@@ -1,6 +1,13 @@
 const AnalyticsSection = () => {
     return (
-        <div>AnalyticsSection</div>
+        <section className="flex gap-[24px] ">
+            <article className="flex-[2]">
+                Ingresos vs Gastos
+            </article>
+            <article className="flex-1">
+                Gastos por categorias
+            </article>
+        </section>
     )
 }
 
