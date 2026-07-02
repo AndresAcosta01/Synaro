@@ -1,7 +1,7 @@
 const HeaderTitle = ({ title }) => {
     return (
-        <div className="ml-[24px]">
-            <h1 className="text-[36px] font-display font-semibold text-ink">
+        <div>
+            <h1 className="text-[20px] font-display font-semibold text-ink mr-[20px]">
                 {title}
             </h1>
         </div>

@@ -1,7 +1,7 @@
 const AnalyticsSection = () => {
     return (
-        <section className="flex gap-[24px] mb-[32px]">
-            <article className="flex-[2] rounded-[20px] border border-line bg-paper p-[24px]">
+        <section className="grid grid-cols-1 xl:grid-cols-3 gap-[24px] mb-[32px]">
+            <article className="xl:col-span-2 rounded-[20px] border border-line bg-paper p-[24px]">
                 <h3 className="text-[18px] font-semibold text-ink">Ingresos vs Gastos</h3>
                 <div className="flex flex-col items-center justify-center h-[320px] gap-[16px]">
                     <div className="flex items-center justify-center w-[72px] h-[72px] rounded-full bg-paper border border-line">
@@ -13,8 +13,7 @@ const AnalyticsSection = () => {
                     </p>
                 </div>
             </article>
-
-            <article className="flex-1 rounded-[20px] border border-line bg-paper p-[24px]">
+            <article className="rounded-[20px] border border-line bg-paper p-[24px]">
                 <h3 className="text-[18px] font-semibold text-ink">Gastos por categorías</h3>
                 <div className="flex flex-col items-center justify-center h-[320px] gap-[16px]">
                     <div className="flex items-center justify-center w-[72px] h-[72px] rounded-full bg-paper border border-line">
@@ -27,7 +26,7 @@ const AnalyticsSection = () => {
                 </div>
             </article>
         </section>
-    )
-}
+    );
+};
 
-export default AnalyticsSection
+export default AnalyticsSection;

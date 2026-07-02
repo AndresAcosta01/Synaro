@@ -11,7 +11,7 @@ const UserProfile = () => {
                 </div>
             </div>
             <button className="flex items-center justify-center w-[40px] h-[40px] rounded-[10px] hover:bg-gray-100 transition-colors duration-200">
-                <LogOut />
+                <LogOut className="w-[20px] h-[20px] text-red-500"/>
             </button>
         </section>
     )

@@ -10,12 +10,12 @@ const Navigation = () => {
                         <li key={item.id}>
                             <button
                                 className={`flex items-center gap-[12px] w-full h-[44px] px-[12px] rounded-[10px] text-left transition-colors duration-200 ${item.active
-                                    ? "bg-pine/10 text-pine"
+                                    ? "bg-pine text-pine"
                                     : "text-ink hover:bg-paper-2"
                                     }`}>
-                                <Icon className={`w-[20px] h-[20px] ${item.active ? "text-pine" : "text-ink"}`}
+                                <Icon className={`w-[20px] h-[20px] ${item.active ? "text-paper" : "text-ink"}`}
                                 />
-                                <span className={`text-[15px] ${item.active ? "font-semibold text-pine" : "font-medium text-ink"}`}>{item.label}</span>
+                                <span className={`text-[15px] ${item.active ? "font-semibold text-paper" : "font-medium text-ink"}`}>{item.label}</span>
                             </button>
                         </li>
                     )

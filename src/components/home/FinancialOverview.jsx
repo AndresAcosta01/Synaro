@@ -2,8 +2,8 @@ import { WalletCards, CreditCard } from "lucide-react";
 
 const FinancialOverview = () => {
     return (
-        <section className="flex gap-[24px] mb-[32px]">
-            <div className="flex-1 rounded-[20px] bg-clay p-[24px] text-paper shadow-sm">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-[24px] mb-[32px]">
+            <div className="rounded-[20px] bg-clay p-[24px] text-paper shadow-sm">
                 <div className="flex items-center gap-[8px]">
                     <WalletCards className="w-[18px] h-[18px]" />
                     <h3 className="text-[15px] font-medium">
@@ -17,7 +17,8 @@ const FinancialOverview = () => {
                     No tienes deudas registradas.
                 </p>
             </div>
-            <div className="flex-1 rounded-[20px] bg-pine p-[24px] text-paper shadow-sm">
+
+            <div className="rounded-[20px] bg-pine p-[24px] text-paper shadow-sm">
                 <div className="flex items-center gap-[8px]">
                     <CreditCard className="w-[18px] h-[18px]" />
                     <h3 className="text-[15px] font-medium">
